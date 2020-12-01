@@ -1,0 +1,150 @@
+@keyframes change_stroke-width {
+    from {
+        stroke-width: 0;
+    }
+    to {
+        stroke-width: 1;
+    }
+}
+@keyframes change_dasharray {
+    from {
+        stroke-dasharray: 50 50;
+    }
+    to {
+        stroke-dasharray: 85 15;
+    }
+}
+@keyframes change_dasharray_yellow {
+    from {
+        stroke-dasharray: 40 50;
+    }
+    to {
+        stroke-dasharray: 31 69;
+    }
+}
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Gotham Pro;
+}
+.line {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 110px;
+    left: 0;
+}
+.diagram__small-number {
+    font-size: 0.5em;
+    transform: translateY(0.25em);
+}
+
+.diagram__text {
+    fill: #4f4f4f;
+    transform: translateY(0.25em);
+}
+.diagram__number {
+    font-size: 0.4em;
+    line-height: 1;
+    text-anchor: middle;
+    transform: translateY(-1.25em);
+}
+
+.diagram__small-persant {
+    fill: #a3a3a3;
+}
+.diagram__label {
+    font-size: 0.2em;
+    font-weight: bold;
+    text-anchor: middle;
+    transform: translateY(-1.3em);
+}
+
+.diagram__subtitle {
+    fill: #ffd000;
+    font-size: 0.2em;
+    font-weight: bold;
+    transform: translateY(-0.3em);
+    text-anchor: middle;
+}
+.diagram__info {
+    fill: #a3a3a3;
+    font-size: 0.1em;
+    font-weight: bold;
+    transform: translateY(-0.3em);
+    text-anchor: middle;
+}
+.diagram__segment {
+    animation: change_stroke-width 1s;
+    stroke-linecap: round;
+    fill: transparent;
+    stroke-width: 1;
+}
+.diagram__segment_first {
+    animation: change_dasharray 1s;
+    stroke-dasharray: 85 15;
+}
+.diagram__segment_yellow {
+    animation: change_dasharray_yellow 2s;
+    stroke-dasharray: 31 69;
+}
+
+.image {
+    position: absolute;
+    left: 231px;
+    top: 69px;
+}
+/* сводки */
+ul {
+    width: 500px;
+    padding-left: 0;
+}
+.list {
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 60px;
+    justify-content: space-between;
+    margin: auto;
+}
+.list__text {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.list__rec {
+    height: 300px;
+    width: 130px;
+}
+.list__back {
+    width: 105px;
+    height: 45.3px;
+    fill: #ededed;
+    stroke: #4f4f4f;
+    stroke-width: 0.5;
+}
+.list__persant {
+    font-size: 0.7em;
+}
+.list__container {
+    position: absolute;
+    top: 15px;
+    left: 116px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-text {
+    color: #808080;
+    font-size: small;
+    margin-top: 20px;
+}
+.list__human {
+    width: 15px;
+    margin: 5px;
+}

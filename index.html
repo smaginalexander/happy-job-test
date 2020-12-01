@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Job</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class="page">
+        <svg class="line">
+            <path fill="none" stroke="#737373" stroke-width="1" d="M40,150 h -30 v 265 h 30 h -30 v30" />
+            <path fill="none" stroke="#737373" stroke-width="1" d="M10,455 v20 v-10 h10 h-20" />
+            <path fill="none" stroke="#737373" stroke-width="1" d="M10,480 v30 h15" />
+        </svg>
+        <img class="image" src="./image/loyalty.svg">
+        <svg class="diagram" width="500" height="500" viewBox="0 0 50 50">
+            <circle r="15.9" cx="50%" cy="50%" fill="#fff"></circle>
+            <circle class="donut-ring" r="15.9" cx="50%" cy="50%" fill="transparent" stroke="#ffffff" stroke-width="1">
+            </circle>
+            <circle class="diagram__segment diagram__segment_first" r="15.9" cx="50%" cy="50%" stroke="#e0e0e0"
+                stroke-dashoffset="17.3"></circle>
+            <circle class="diagram__segment diagram__segment_yellow" r="15.9" cx="50%" cy="50%" stroke="#ffd000"
+                stroke-dasharray="31 69" stroke-dashoffset="17.4"></circle>
+            <circle class="diagram__segment" r="15.9" cx="50%" cy="50%" stroke="#00f725" stroke-dasharray="31 69"
+                stroke-dashoffset="86.4"></circle>
+            <g class="diagram__text">
+                <text x="50%" y="47%" class="diagram__number">72<tspan class="diagram__small-number">.7<tspan x="57.5%"
+                            y="41%" class="diagram__small-persant">
+                            %</tspan></text>
+                <text x="50%" y="47%" class="diagram__label">
+                    Лояльность
+                </text>
+                <text x="50%" y="46%" class="diagram__subtitle">
+                    ниже среднего
+                </text>
+                <text x="50%" y="50%" class="diagram__info">
+                    по отрасли: FMCG
+                    <tspan x="50%" y="55%">значений слева от медианы</tspan>
+                    <tspan x="50%" y="60%">52.0%-83.1%</tspan>
+                </text>
+            </g>
+        </svg>
+
+        <ul>
+            <li class="list">
+                <div class="list__container">
+                    <p class="container-text"> 81</p>
+                    <img class="list__human" src="./image/human_full.svg">
+                </div>
+                <p class="list__text">Промоуторы<span>32.0%</span></p>
+                <svg class="list__rec">
+                    <rect class="list__back" x="5" y="5" rx="10" ; />
+                    <path d="M5 15 
+             a10 10 0 0 1 10 -10
+             h 30   
+             v 35
+             h -40
+             z" fill="#00f725"></path>
+                    <path d="M15 40   
+             h 20
+             v 10
+             h -20
+             a10 10 0 0 1 -10 -10
+               v -0
+             " fill="#8fffa0"></path>
+                    <text x="58%" y="10%" class="list__persant">+1.2%</text>
+                </svg>
+            </li>
+            <li class="list">
+                <div class="list__container">
+                    <p class="container-text"> 8</p>
+                    <img class="list__human" src="./image/human_full.svg">
+                </div>
+                <p class="list__text">Скептики <span>39.1%</span></p>
+                <svg class="list__rec">
+                    <rect class="list__back" x="5" y="5" rx="10" ; />
+                    <path d="M5 15 
+             a10 10 0 0 1 10 -10
+             h 35   
+             v 35
+             h -45
+             z" fill="#ffd000"></path>
+                    <path d="M15 40   
+             h 25
+             v 10
+             h -25
+             a10 10 0 0 1 -10 -10
+               v -0
+             " fill="#ffe885"></path>
+                    <text x="58%" y="10%" class="list__persant">+4.8%</text>
+                </svg>
+            </li>
+            <li class="list">
+                <div class="list__container">
+                    <p class="container-text"> 7</p>
+                    <img class="list__human" src="./image/human_full.svg">
+                </div>
+                <p class="list__text">Критики<span>79.8%</span></p>
+                <svg class="list__rec">
+                    <rect class="list__back" x="5" y="5" rx="10" ; />
+                    <path d="M5 15 
+             a10 10 0 0 1 10 -10
+             h 40   
+             v 35
+             h -50
+             z" fill="#ff3600"></path>
+                    <path d="M15 40   
+             h 45
+             v 10
+             h -45
+             a10 10 0 0 1 -10 -10
+               v -0
+             " fill="#ff8585"></path>
+                    <text x="58%" y="10%" class="list__persant">+1.2%</text>
+                </svg>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
